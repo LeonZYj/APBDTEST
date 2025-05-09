@@ -1,3 +1,5 @@
+using PTQ.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -37,14 +39,28 @@ app.MapGet("/weatherforecast", () =>
     .WithName("GetWeatherForecast");
 
 
-app.MapGet("api/quizzes", IRepository service) => {
+app.MapGet("api/quizzes", IService service) => {git 
     var quizes = service.GetQuizzes();
     return Results.Ok(new
     {
         Count = quizes.Count(),
         Quizzes = quizes.Select(a => new { a.ID, b.Name })ToList()
     });
-}
+});
+
+
+app.MapGet("api/quizzes/{id}", (IService service, int id)) => {
+    var quiz = service.GetQuiz(id);
+
+    return Results.Ok(new
+    {
+        quiz.ID
+        quiz.Name,
+        quiz.PotatoTeacher,
+        quiz.path
+
+
+    });
 
 app.Run();
 
