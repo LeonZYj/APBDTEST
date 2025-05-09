@@ -700,7 +700,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "9.0.2"
+          "Microsoft.AspNetCore.OpenApi": "9.0.2",
+          "PTQ.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PTQ.API.dll": {}
@@ -715,6 +716,10 @@
       "PTQ.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "PTQ.API": "1.0.0",
+          "PTQ.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PTQ.Application.dll": {}
         },

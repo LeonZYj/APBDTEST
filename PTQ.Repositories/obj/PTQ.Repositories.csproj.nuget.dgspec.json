@@ -31,7 +31,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.Models\\PTQ.Models.csproj": {
+                "projectPath": "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.Models\\PTQ.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -104,7 +108,14 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.API\\PTQ.API.csproj": {
+                "projectPath": "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.API\\PTQ.API.csproj"
+              },
+              "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.Models\\PTQ.Models.csproj": {
+                "projectPath": "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.Models\\PTQ.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

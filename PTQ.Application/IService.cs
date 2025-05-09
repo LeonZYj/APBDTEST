@@ -1,8 +1,8 @@
 ﻿using PTQ.Models;
 
-namespace PTQ.Repositories;
+namespace PTQ.Application;
 
-public interface IServiceLogic
+public interface IService
 {
     IEnumerable<RequestTestDTO> GetAllTests();
     RequestTestDTO GetTestById(int id);

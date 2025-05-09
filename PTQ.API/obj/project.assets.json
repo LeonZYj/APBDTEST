@@ -33,6 +33,16 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "PTQ.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/PTQ.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PTQ.Models.dll": {}
+        }
       }
     }
   },
@@ -67,11 +77,17 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "PTQ.Models/1.0.0": {
+      "type": "project",
+      "path": "../PTQ.Models/PTQ.Models.csproj",
+      "msbuildProject": "../PTQ.Models/PTQ.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.OpenApi >= 9.0.2"
+      "Microsoft.AspNetCore.OpenApi >= 9.0.2",
+      "PTQ.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -105,7 +121,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.Models\\PTQ.Models.csproj": {
+              "projectPath": "C:\\Users\\s31723\\RiderProjects\\WebApi\\PTQ.Models\\PTQ.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

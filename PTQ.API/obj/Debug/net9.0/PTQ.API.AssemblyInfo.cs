@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PTQ.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fe6926cdb96a49da06fbf6a0ab53b6bf988c612")]
 [assembly: System.Reflection.AssemblyProductAttribute("PTQ.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PTQ.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

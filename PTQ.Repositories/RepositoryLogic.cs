@@ -3,11 +3,11 @@ using PTQ.Models;
 
 namespace PTQ.Repositories;
 
-public class ServiceLogic : IServiceLogic
+public class RepositoryLogic : IRepository
 {
     private readonly string _connectionString;
 
-    public ServiceLogic(string connectionString)
+    public RepositoryLogic(string connectionString)
     {
         _connectionString = connectionString;
     }

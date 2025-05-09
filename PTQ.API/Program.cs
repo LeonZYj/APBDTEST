@@ -1,8 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddTransient<IService, Service>();
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
 
 var app = builder.Build();
 
@@ -32,6 +35,16 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast");
+
+
+app.MapGet("api/quizzes", IRepository service) => {
+    var quizes = service.GetQuizzes();
+    return Results.Ok(new
+    {
+        Count = quizes.Count(),
+        Quizzes = quizes.Select(a => new { a.ID, b.Name })ToList()
+    });
+}
 
 app.Run();
 
